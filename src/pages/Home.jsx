@@ -73,7 +73,7 @@ const Home = ({ onVideoLoaded }) => {
         <div className=" mt-20 relative z-10 flex flex-col items-center justify-center min-h-screen h-auto text-white text-center py-4">
           <img
             className="h-[70px] w-[70px] animate-[spin_10s_linear_infinite]"
-            src="/public/images/logo4.png"
+            src="/images/logo4.png"
           ></img>
           <h1 className="text-5xl font-bold mb-3">
             Veehar Corporates Pvt. Ltd.
