@@ -5,7 +5,7 @@ export default function Loader() {
     <div className='h-screen w-full'>
         <div className='flex justify-center items-center h-full'>
         <img className='h-[80px] w-[80px] animate-[spin_1s_ease-in-out_infinite]' 
-        src='../../public/images/logo4.png'>
+        src='/public/images/logo4.png'>
 
         </img>
         </div>

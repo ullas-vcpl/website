@@ -60,7 +60,7 @@ export default function Navbar() {
           <div className="flex justify-between items-center gap-3">
             <img
               className="h-[45px] w-[45px] animate-[spin_10s_linear_infinite]"
-              src="../../public/images/logo4.png"
+              src="/public/images/logo4.png"
             ></img>
             <p className="font-bold text-2xl tracking-wider">
               <Link to="/">VCPL</Link>
