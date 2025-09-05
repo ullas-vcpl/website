@@ -8,19 +8,13 @@ import {
   TextInput,
 } from "flowbite-react";
 import { useState } from "react";
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
 export default function Contact() {
   const [openModal, setOpenModal] = useState(false);
    function onCloseModal() {
     setOpenModal(false);
   }
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+ 
   return (
     <>
     <Modal show={openModal} onClose={onCloseModal} popup>
@@ -72,13 +66,13 @@ export default function Contact() {
         {/* Contact Info */}
         <div className="space-y-3">
           <p className="text-gray-700">
-            📍 <span className="font-semibold">Address:</span> Plot 123, IT Park, Chandigarh
+            📍 <span className="font-semibold">Address:</span> E-122,West Vinod Nagar, Delhi
           </p>
           <p className="text-gray-700">
-            📧 <span className="font-semibold">Email:</span> contact@vcpl.com
+            📧 <span className="font-semibold">Email:</span> info@veeharcorporates.org
           </p>
           <p className="text-gray-700">
-            📞 <span className="font-semibold">Phone:</span> +91-9876543210
+            📞 <span className="font-semibold">Phone:</span> +91-9773654682
           </p>
         </div>
 

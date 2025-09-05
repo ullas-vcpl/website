@@ -67,7 +67,7 @@ export default function Navbar() {
             </p>
           </div>
           <nav>
-            <ul className="md:flex hidden gap-4 ">
+            <ul className="md:flex hidden gap-8 text-lg">
               <li
                 className="cursor-pointer hover:text-blue-600 hover:font-bold"
                 onClick={() => window.location.reload()}
@@ -86,7 +86,8 @@ export default function Navbar() {
             </ul>
           </nav>
           <div
-            className="hidden md:block bg-blue-600 rounded-md px-2 py-1 cursor-pointer"
+            className="hidden md:block bg-blue-600 rounded-md px-2 py-1 cursor-pointer
+            hover:opacity-70"
             onClick={() => setOpenModal(true)}
           >
             Get Quotation

@@ -1,4 +1,5 @@
 import Cards from "../components/Cards";
+import {Link} from "react-router-dom";
 import {
   Button,
   Checkbox,
@@ -9,10 +10,9 @@ import {
   TextInput,
 } from "flowbite-react";
 import { useState } from "react";
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
 
-const Home = ({ onVideoLoaded }) => {
+
+const Home = () => {
   const description = [
     "We leverage the latest technologies to create tailored IT solutions for your business challenges.",
     "Our solutions integrate smoothly with your existing systems, minimizing disruption and maximizing efficiency.",
@@ -30,11 +30,6 @@ const Home = ({ onVideoLoaded }) => {
     setOpenModal(false);
   }
 
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
 
   return (
     <>
@@ -72,7 +67,7 @@ const Home = ({ onVideoLoaded }) => {
           loop
           muted
           src="https://www.pexels.com/download/video/7534239/"
-          onCanPlayThrough={onVideoLoaded} // triggers when video is ready to play
+           // triggers when video is ready to play
         />
 
         {/* Overlay */}
@@ -94,10 +89,16 @@ const Home = ({ onVideoLoaded }) => {
             Empowering your business with cutting-edge IT solutions that drive
             efficiency, innovation, and sustainable growth.
           </p>
+          <div className="flex flex-row gap-4">
           <button className="mt-6 cursor-pointer text-xl bg-blue-700 rounded-lg px-3 py-2"
           onClick={() => setOpenModal(true)}>
             Get Quotation Now!
           </button>
+           <button className="mt-6 cursor-pointer text-xl bg-blue-400 rounded-lg px-3 py-2"
+          >
+            <Link to="/services">Learn More!</Link>
+          </button>
+          </div>
         </div>
       </div>
       
