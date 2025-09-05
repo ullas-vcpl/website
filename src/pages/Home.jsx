@@ -89,12 +89,12 @@ const Home = () => {
             Empowering your business with cutting-edge IT solutions that drive
             efficiency, innovation, and sustainable growth.
           </p>
-          <div className="flex flex-row gap-4">
-          <button className="mt-6 cursor-pointer text-xl bg-blue-700 rounded-lg px-3 py-2"
+          <div className="flex flex-col md:flex-row gap-4">
+          <button className="hover:opacity-70 mt-2 md:mt-6 cursor-pointer text-xl bg-blue-700 rounded-lg px-3 py-2"
           onClick={() => setOpenModal(true)}>
             Get Quotation Now!
           </button>
-           <button className="mt-6 cursor-pointer text-xl bg-blue-400 rounded-lg px-3 py-2"
+           <button className="hover:opacity-70 md:mt-6 cursor-pointer text-xl bg-blue-400 rounded-lg px-3 py-2"
           >
             <Link to="/services">Learn More!</Link>
           </button>
