@@ -9,6 +9,8 @@ import {
   TextInput,
 } from "flowbite-react";
 import { useState } from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Home = ({ onVideoLoaded }) => {
   const description = [
@@ -27,6 +29,13 @@ const Home = ({ onVideoLoaded }) => {
    function onCloseModal() {
     setOpenModal(false);
   }
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
       <Modal show={openModal} onClose={onCloseModal} popup>

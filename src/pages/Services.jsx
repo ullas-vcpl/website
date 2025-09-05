@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 export default function Services() {
   const services = [
     {
@@ -37,6 +39,11 @@ export default function Services() {
       image: "https://images.pexels.com/photos/6804086/pexels-photo-6804086.jpeg",
     },
   ];
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <section className="min-h-screen w-full bg-gray-50 px-6 md:px-16 py-12 mt-10">

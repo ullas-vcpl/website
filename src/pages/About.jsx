@@ -1,5 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 export default function About() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <section className="mt-[30px] md:mt-0 relative flex flex-col md:flex-row items-center justify-between min-h-[100vh] w-full bg-gray-50 px-6 md:px-16 py-12">
       {/* Left Side - Text */}
