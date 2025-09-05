@@ -1,45 +1,55 @@
-import { FaLinkedin, FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-12">
-      <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* About Section */}
-        <div>
-          <h3 className="text-xl font-bold mb-4">VCPL IT Solutions</h3>
-          <p className="text-gray-400">
-            Innovate. Integrate. Elevate. Delivering IT solutions that empower businesses and drive growth.
+    <footer className="bg-gray-900 text-gray-300 py-8 px-4">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-around items-center space-y-8 md:space-y-0 md:space-x-30">
+
+        {/* Logo & Company Info */}
+        <div className="md:w-[30vw] flex flex-col items-center text-center">
+          <img
+            src="/images/logo4.png" 
+            alt="VCPL Logo"
+            className="h-12 mb-3"
+          />
+          <h2 className="text-xl font-bold text-white">Veehar Corporates Pvt. Ltd.</h2>
+          <p className="mt-2 text-sm text-gray-400">
+            Empowering businesses with innovative IT solutions that drive growth,
+            efficiency, and sustainability.
           </p>
         </div>
 
-        {/* Contact & Social Media */}
-        <div className="flex flex-col md:items-end">
-          <h3 className="text-xl font-bold mb-4">Contact Us</h3>
-          <p className="text-gray-400">Email: info@vcpl.com</p>
-          <p className="text-gray-400">Phone: +91 123 456 7890</p>
-          <p className="text-gray-400">Address: 123, Tech Street, City, India</p>
+        {/* Contact Info */}
+        <div className=" md:w-[30vw] flex flex-col items-center text-center">
+          <h3 className="text-lg font-semibold text-white">Contact Us</h3>
+          <p className="mt-3 text-sm">📍 West Vinod Nagar, New Delhi, India</p>
+          <p className="text-sm">📧 info@veeharcorporates.org</p>
+          <p className="text-sm">📞 +91 97736 54682</p>
+        </div>
 
-          {/* Social Icons */}
-          <div className="flex space-x-4 mt-4">
-            <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors duration-300">
-              <FaLinkedin size={24} />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors duration-300">
-              <FaTwitter size={24} />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+        {/* Social Media */}
+        <div className=" md:w-[30vw] flex flex-col items-center text-center">
+          <h3 className="text-lg font-semibold text-white">Follow Us</h3>
+          <div className="flex space-x-5 mt-3">
+            <a href="#" className="hover:text-blue-500 transition-colors duration-300">
               <FaFacebook size={24} />
             </a>
-            <a href="#" className="text-gray-400 hover:text-blue-500 transition-colors duration-300">
+            <a href="#" className="hover:text-pink-500 transition-colors duration-300">
               <FaInstagram size={24} />
+            </a>
+            <a href="#" className="hover:text-blue-400 transition-colors duration-300">
+              <FaTwitter size={24} />
+            </a>
+            <a href="#" className="hover:text-blue-700 transition-colors duration-300">
+              <FaLinkedin size={24} />
             </a>
           </div>
         </div>
       </div>
 
-      {/* Bottom Copyright */}
-      <div className="mt-8 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
-        &copy; {new Date().getFullYear()} VCPL IT Solutions. All rights reserved.
+      {/* Bottom Bar */}
+      <div className="mt-8 border-t border-gray-700 pt-4 text-center text-sm text-gray-500">
+        © {new Date().getFullYear()} Veehar Corporates Pvt. Ltd. All rights reserved.
       </div>
     </footer>
   );
