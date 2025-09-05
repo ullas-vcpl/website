@@ -95,13 +95,13 @@ const Home = ({ onVideoLoaded }) => {
       <section className="px-5 min-h-screen h-auto min-w-screem w-auto
       bg-gradient-to-b from-gray-900 via-gray-600 to-gray-300 py-10">
         <h2 className="w-full text-center text-white font-bold text-2xl">Why Choose Us?</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-20" id="cards-container">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-20 h-[200vh] md:h-[60vh] ">
         <Cards title="Innovative Solution" description={description[0]} imageUrl="https://images.pexels.com/photos/16129703/pexels-photo-16129703.jpeg"/>
         <Cards title="Seamless Integration" description={description[1]} imageUrl="https://images.pexels.com/photos/12903300/pexels-photo-12903300.jpeg"/>
         <Cards title="Reliable Support" description={description[2]} imageUrl="https://images.pexels.com/photos/7681302/pexels-photo-7681302.jpeg"/>
         </div>
 
-        <div className="text-center mb-12 mt-10">
+        <div className="text-center mb-12 mt-20">
         <h2 className="text-4xl font-bold text-gray-800">Our Achievements at a Glance</h2>
         <p className="mt-4 text-white max-w-2xl mx-auto">
           These numbers reflect our commitment to delivering innovative, reliable, and client-focused IT solutions.

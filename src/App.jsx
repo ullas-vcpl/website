@@ -14,6 +14,14 @@ function App() {
   return (
      <Router>
       {!videoLoaded && <Loader />}
+              <video
+          className="hidden absolute h-[100%] w-full object-cover"
+          autoPlay
+          loop
+          muted
+          src="https://www.pexels.com/download/video/7534239/"
+          onCanPlayThrough={() => setVideoLoaded(true)} // triggers when video is ready to play
+        />
       <div className={`${!videoLoaded ? "hidden" : "block"}`}>
         <Navbar />
         <Routes>

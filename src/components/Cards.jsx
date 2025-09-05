@@ -2,8 +2,9 @@ import React from 'react'
 
 export default function Cards({title, description, imageUrl}) {
   return (
-    <div id = "card-container" className='mx-4 min-h-[30vh] group relative  max-h-[60vh] w-auto bg-black rounded-lg   text-white mt-10
-    shadow-lg transition-transform duration-500 hover:scale-110'>
+    <div id = "card-container" className='mx-4 min-h-[30vh] group relative w-auto bg-black rounded-lg   text-white mt-10
+    shadow-lg transition-transform duration-500 hover:scale-110
+    flex flex-col h-auto'>
       <img className='rounded-lg h-full w-full' src={imageUrl} />
       
       <div className= 'h-auto absolute inset-0 flex flex-col items-center justify-center px-4 '>

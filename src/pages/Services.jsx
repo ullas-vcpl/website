@@ -4,37 +4,37 @@ export default function Services() {
       title: "Custom Software Development",
       description:
         "We design and build tailor-made software applications to solve your business challenges efficiently and securely.",
-      image: "https://via.placeholder.com/400x250?text=Software+Development",
+      image: "https://images.pexels.com/photos/3585001/pexels-photo-3585001.jpeg",
     },
     {
       title: "Cloud Solutions",
       description:
         "Seamless migration, deployment, and management of cloud platforms to help your business scale effortlessly.",
-      image: "https://via.placeholder.com/400x250?text=Cloud+Solutions",
+      image: "https://plus.unsplash.com/premium_photo-1733306493254-52b143296396?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNsb3VkJTIwY29tcHV0aW5nfGVufDB8fDB8fHww",
     },
     {
       title: "Web & Mobile App Development",
       description:
         "Engaging and responsive web and mobile applications that deliver superior user experiences across all devices.",
-      image: "https://via.placeholder.com/400x250?text=App+Development",
+      image: "https://images.unsplash.com/photo-1565263965454-a44e2ede252a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHdlYiUyMGFuZCUyMG1vYmlsZSUyMGFwcHxlbnwwfHwwfHx8MA%3D%3D",
     },
     {
       title: "IT Consulting",
       description:
         "Strategic guidance and expert advice to align IT solutions with your business objectives for sustainable growth.",
-      image: "https://via.placeholder.com/400x250?text=IT+Consulting",
+      image: "https://images.unsplash.com/photo-1573167582108-000d05b2faad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fElUJTIwY29uc3VsdGluZ3xlbnwwfHwwfHx8MA%3D%3D",
     },
     {
       title: "Cybersecurity Solutions",
       description:
         "Robust security frameworks and monitoring systems to safeguard your business against digital threats.",
-      image: "https://via.placeholder.com/400x250?text=Cybersecurity",
+      image: "https://plus.unsplash.com/premium_photo-1700830452741-3640bed87eef?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGN5YmVyJTIwc2VjdXJpdHl8ZW58MHx8MHx8fDA%3D",
     },
     {
       title: "24/7 IT Support",
       description:
         "Round-the-clock technical support ensuring your systems run smoothly without downtime.",
-      image: "https://via.placeholder.com/400x250?text=IT+Support",
+      image: "https://images.pexels.com/photos/6804086/pexels-photo-6804086.jpeg",
     },
   ];
 

@@ -46,7 +46,7 @@ export default function Contact() {
       {/* Left Side - Image */}
       <div className="md:w-1/2 w-full flex items-center justify-center mb-10 md:mb-0">
         <img
-          src="https://via.placeholder.com/500x400"
+          src="https://plus.unsplash.com/premium_photo-1661371767935-aeeb44523816?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGNvbnRhY3QlMjB1c3xlbnwwfHwwfHx8MA%3D%3D"
           alt="Contact Us"
           className="rounded-lg shadow-lg w-full max-w-md"
         />

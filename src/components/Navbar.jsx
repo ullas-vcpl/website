@@ -69,24 +69,24 @@ export default function Navbar() {
           <nav>
             <ul className="md:flex hidden gap-4 ">
               <li
-                className="cursor-pointer hover:text-amber-300 hover:font-bold"
+                className="cursor-pointer hover:text-blue-600 hover:font-bold"
                 onClick={() => window.location.reload()}
               >
                 <Link to="/">Home</Link>
               </li>
-              <li className="cursor-pointer hover:text-amber-300 hover:font-bold">
+              <li className="cursor-pointer hover:text-blue-600 hover:font-bold">
                 <Link to="/about">About</Link>
               </li>
-              <li className="cursor-pointer hover:text-amber-300 hover:font-bold">
+              <li className="cursor-pointer hover:text-blue-600 hover:font-bold">
                 <Link to="/services">Services</Link>
               </li>
-              <li className="cursor-pointer hover:text-amber-300 hover:font-bold">
+              <li className="cursor-pointer hover:text-blue-600 hover:font-bold">
                 <Link to="/contact">Contact Us</Link>
               </li>
             </ul>
           </nav>
           <div
-            className="hidden md:block bg-indigo-700 rounded-md px-2 py-1 cursor-pointer"
+            className="hidden md:block bg-blue-600 rounded-md px-2 py-1 cursor-pointer"
             onClick={() => setOpenModal(true)}
           >
             Get Quotation
@@ -109,16 +109,22 @@ export default function Navbar() {
           <li className="cursor-pointer" onClick={() => {handleClick();}}><Link to="/about">About</Link></li>
           <li className="cursor-pointer" onClick={() => {handleClick();}}><Link to="/services">Services</Link></li>
           <li className="cursor-pointer" onClick={() => {handleClick();}}><Link to="/contact">Contact Us</Link></li>
-          <li
-            className="cursor-pointer"
+          <div className="px-4 flex items-center justify-between" >
+            <li
+            className="cursor-pointer bg-blue-600 rounded-lg px-4 py-2 text-center text-md"
             onClick={() => {
               setOpenModal(true);
               handleClick();
             }}
           >
-            {" "}
-            Login{" "}
+            Get Quotation
           </li>
+          
+            <li
+            className="cursor-pointer bg-blue-600 rounded-lg px-4 py-2 text-center text-md">
+            <Link to="/services">Learn More</Link>
+          </li>
+          </div>
         </ul>
       </div>
     </>
